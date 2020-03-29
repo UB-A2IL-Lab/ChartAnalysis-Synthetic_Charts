@@ -1,0 +1,161 @@
+{
+	"Type": [ "Bar","Line"],
+	"Orientation": ["Vertical","Horizontal"],
+	"Tick_Variety" : true,
+	"ShowGrid": [ false, true],
+	"Independent_Axes": {
+		"Scale": ["LINEAR"],
+		"Visible": ["TRUE"],
+		"Labels": [
+			{
+				"Source": "DATAFILE-DATA"
+			},
+			{
+				"Source": "RANGE",
+				"MIN": 10,
+				"MAX": 1000,
+				"Count": 100
+			},
+			{
+				"Source": "RANGE",
+				"MIN": 400,
+				"MAX": 800,
+				"Count": 20
+			},
+			{
+				"Source": "COMPUTED",
+				"Count": 100
+			}
+		],
+		"Labels_Visible": ["TRUE", "FALSE"],
+		"Labels_Font": {
+			"Position": ["LOW", "HIGH"]
+		},
+		"Tick_Marks": {
+			"Direction": ["IN", "OUT", "INOUT"]
+		},
+		"Major": {
+			"Visible": ["TRUE", "FALSE"]
+		},
+		"Minor": {
+			"Visible": ["TRUE", "FALSE"]
+		},
+		"NumberPerMajor": "N"
+	},
+	"Dependent_Axis_1": {
+		"Scale": ["LINEAR"],
+		"Visible": ["TRUE"],
+		"Labels": [{
+				"Source": "DATAFILE"
+			},
+			{
+				"Source": "RANGE",
+				"MIN": 10,
+				"MAX": 1000,
+				"Count": 100
+			},
+			{
+				"Source": "RANGE",
+				"MIN": 400,
+				"MAX": 800,
+				"Count": 20
+			},
+			{
+				"Source": "COMPUTED",
+				"Count": 100
+			},
+			{
+				"Visible": ["TRUE", "FALSE"]
+			},
+			{
+				"Font": {
+					"Position": ["LOW", "HIGH"]
+				}
+			}
+		],
+		"Tick_Marks": {
+			"Direction": ["In", "Out", "InOut"]
+		},
+		"Major": {
+			"Visible": [true, false]
+		},
+		"Minor": {
+			"Visible": [true, false]
+		},
+		"NumberPerMajor": "N"
+	},
+	"Dependent_Axis_2": {
+		"Scale": ["Linear", "Log"],
+		"Visible": [true, false],
+		"Labels": [{
+				"Source": "DATAFILE"
+			},
+			{
+				"Source": "RANGE",
+				"MIN": 10,
+				"MAX": 1000,
+				"Count": 100
+			},
+			{
+				"Source": "RANGE",
+				"MIN": 400,
+				"MAX": 800,
+				"Count": 20
+			},
+			{
+				"Source": "COMPUTED",
+				"Count": 100
+			},
+			{
+				"Visible": ["TRUE", "FALSE"]
+			},
+			{
+				"Font": {
+					"Position": ["LOW", "HIGH"]
+				}
+			}
+		],
+		"Grid": [true, false],
+		"Tick_Marks": {
+			"Direction": ["In", "Out", "InOut"]
+		},
+		"Major": {
+			"Visible": [true, false]
+		},
+		"Minor": {
+			"Visible": [true, false]
+		},
+		"NumberPerMajor": "N"
+	},
+	"Data": {
+		"Color": {
+			"Random":["red", "green", "blue", "yellow"],
+			"Select":["red", "green", "blue", "yellow"]
+		}
+	},
+	"Title": {
+		"Visible": [true, false]
+	},
+	"Data_Labels": {
+		"Type": ["Normal", "Callout", "None"]
+	},
+	"Legend_Visibility": {
+		"Visible": [true, false]
+	},
+	"Location": ["Upper-Right-Inside", "Upper-Right-Outside"],
+	"Chart_Type_Specific": {
+		"Bar": {
+			"Bar_Width": 0.3,
+			"Bar_Padding": 0.2
+		},
+		"Line": {
+			"Line_Width": 0.8,
+			"Line_Style": "dashed"
+		}
+	},
+	"Text_Font": {
+		"Font_Name": "Arial",
+		"Font_Size": 10,
+		"Font_Style": ["Bold, Italics, Underline"]
+	}
+}
